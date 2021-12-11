@@ -34,7 +34,10 @@ function insertNewRecord(data){
     var cell4 = newRow.insertCell(3);
         cell4.innerHTML = data.perPrice;
     var cell5 = newRow.insertCell(4);
-        cell5.innerHTML = `<button id="OnEditButton" onClick='onEdit(this)'>Edit</button> <button id="OnDeleteButton" onClick='onDelete(this)'>Delete</button>`
+        cell5.innerHTML = `<button id="OnEditButton" onClick='onEdit(this)'>Edit</button>`
+    var cell6 = newRow.insertCell(5);
+
+       cell6.innerHTML=`<button id="OnDeleteButton" onClick='onDelete(this)'>Delete</button>`
 }
 
 //Edit the data
